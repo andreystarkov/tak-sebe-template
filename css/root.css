@@ -1,0 +1,632 @@
+
+    /* Common styles for ARTKarte
+       im@andreystarkov.ru */
+
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+
+    body { background: #202020; font-family: 'Open Sans'; }
+
+    a { color: #ff8019; text-decoration: none; transition: all 0.4s ease }
+
+    a:hover { color: #ffa55c; text-decoration: none; }
+
+    /* Структурные блоки */
+
+    .wrapper-global {
+        width: 1174px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .wrapper-inner {
+        width: 1100px;
+        position: relative;
+        margin: -120px auto;
+        text-align: center;
+        background: url(../img/bg-1.png) repeat, url(../img/gradient-bottom.png) no-repeat;
+        background-position: bottom-left;
+        padding-bottom: 70px;
+        margin-bottom: 50px;
+        z-index: 1;
+        border-bottom: 2px solid rgba(255,255,255,0.2);
+        border-left: 1px solid rgba(255,255,255,0.1);
+        border-right: 1px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .wrapper-flow {
+        width: 1020px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 20;
+    }
+
+    .header {
+        width: 1174px;
+        height: 340px;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        background: url(../img/header.png) top center no-repeat;
+    }
+
+    /* Ссылки портфолио и заявка на стенд */
+
+    .header .portfolio {
+        position: absolute;
+        bottom: 60px; width: 1020px;
+        margin: 0 auto;
+        left: 76px;
+        font-size: 12pt;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .header .btn-request {
+        width: 153px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+        height: 33px;
+        bottom: 5px;
+        right: 0px;
+        background: url(../img/btn-request.jpg) center center no-repeat;
+    }
+
+    .header .portfolio a {
+        color: #fff;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header .portfolio a:hover {
+        color: #ff8019;
+    }
+
+    /* Блок объявлений в шапке */
+
+    .header .block {
+        position: absolute;
+        top: 98px;
+        height: 90px;
+        padding: 10px;
+    }
+
+    .header .block a {
+        font-size: 11pt;
+    }
+
+    .header .block span {
+        font-size: 14pt;
+        display: block;
+        color: #f0f0f0;
+        text-transform: uppercase;
+    }
+
+    .header .block i {
+        font-size: 10pt;
+        display: block;
+        color: #f0f0f0;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+
+    .header .announcement {
+        left: 230px;
+        width: 450px;
+    }
+
+    .header .phone {
+        width: 180px;
+        right:50px;
+    }
+
+    .header .time {
+        width: 240px;
+        right: 250px;
+    }
+
+    /*  Контент-блок  */
+
+    .box-container {
+        position: relative;
+        z-index: 20;
+        display: inline-block;
+        width: 1020px;
+        margin: 0 auto;
+    }
+
+    .box-container p {
+        text-align: justify;
+        color: #f2f2f2;
+        font-size: 14px;
+    }
+
+    .box-container h3 {
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+        display: block;
+        text-align:left;
+        padding-left: 22px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #f1f1f1;
+        text-transform: uppercase;
+
+    }
+
+    /* Сетка портфолио */
+
+    .portfolio-grid {
+        position: relative; width: 1040px; margin: -10px auto; display: block;
+        text-align: left;
+    }
+
+    .portfolio-grid ul {
+        margin: 30px auto;
+        display: inline-block;
+        padding: 0;
+        list-style: none;
+        text-align: left;
+    }
+
+    .portfolio-grid h3 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 300;
+        position: absolute;
+        text-shadow: 1px 1px 3px rgba(0,0,0.4);
+        top:-33px;
+        left: 0;
+    }
+
+    .portfolio-grid ul li img {
+        border: 1px solid rgba(255,255,255,0.3);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .portfolio-grid ul li {
+        width: 110px;
+        height: 110px;
+        margin-top: 19px;
+        float: left;
+        margin-right: 19px;
+    }
+
+    .portfolio-grid ul li:last-child {
+        margin-right: 0px;
+    }
+
+    /*  Последние работы  */
+
+    .latest-work h3 { background: url(../img/line.png) no-repeat; background-position: 0px 13px; }
+
+    .latest-work .works {
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+    }
+
+    .latest-work .works li { float: left; margin-right: 44px; }
+
+    .latest-work .works li:last-child { margin-right: 0px; }
+
+    .latest-work .works li a { color: #cccbcb; }
+    .latest-work .works li a:hover { color: #fff; }
+
+    .latest-work .works li a i {
+        font-style: normal;
+        display: block;
+        text-align: center;
+        padding: 10px 12px 5px 12px;
+        font-size: 14px;
+    }
+
+    .latest-work .works li a img {
+        border: 1px solid rgba(255,255,255,0.2);
+        -webkit-filter: grayscale(100%);
+        -webkit-transition: .5s ease-in-out;
+        -moz-filter: grayscale(100%);
+        -moz-transition: .5s ease-in-out;
+        -o-filter: grayscale(100%);
+        -o-transition: .5s ease-in-out;
+    }
+
+    .latest-work .works li a img:hover {
+        border: 1px solid rgba(255,255,255,0.4);
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+        -webkit-filter: grayscale(0%);
+        -webkit-transition: .5s ease-in-out;
+        -moz-filter: grayscale(0%);
+        -moz-transition: .5s ease-in-out;
+        -o-filter: grayscale(0%);
+        -o-transition: .5s ease-in-out;
+    }
+
+    /*  Блок новостей и обратной связи  */
+
+    .pre-footer .news h3 { background: url(../img/line-half.png) no-repeat; background-position: 0px 13px; }
+
+    .pre-footer .news { position: relative; float: left; width: 490px; }
+
+    .pre-footer .news .archive { font-size: 14px; float: left; }
+
+    .pre-footer .news .archive:hover { text-decoration: underline; }
+
+    .pre-footer .feedback { position: relative; float: right; width: 490px; }
+
+    .pre-footer .feedback h3 { background: url(../img/line-half.png) no-repeat; background-position: 0px 13px; }
+
+    .pre-footer .feedback form { margin-top: 40px; position: relative; width: 100%; }
+
+    .pre-footer .feedback .btn-send {
+        position: relative;
+        float: left;
+        margin-top: 15px;
+        width: 115px;
+        height: 35px;
+        background: url(../img/btn-send.png) no-repeat;
+    }
+
+    .pre-footer .feedback form label {
+        position: absolute;
+        top: -25px;
+        color: #d3d3d3;
+        font-size: 14px;
+    }
+
+    .pre-footer .feedback .label-name { left: 0px; }
+    .pre-footer .feedback .label-back { left: 295px; }
+
+    .pre-footer .feedback form input {
+        padding: 5px;
+        border: none;
+        background: #fff;
+        color: #666;
+        border-radius: 0px;
+        float: left;
+        position: relative;
+    }
+
+    /* Футер */
+
+    #footer {
+        position: relative;
+        width: 1100px;
+        margin: -40px auto;
+        padding-top: 15px;
+        height: 100px;
+    }
+
+    #footer .info {
+        position: absolute;
+        right: 0px;
+        width: 900px;
+        height: 40px;
+        text-align: right;
+        font-size: 13px;
+        color: rgba(255,255,255,0.4);
+    }
+
+    #footer .pdf {
+        position: absolute;
+        left: 0px;
+        width: 300px;
+        height: 30px;
+        padding-left: 30px;
+        background: url(../img/pdf.png) left center no-repeat;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    #footer a { color: rgba(255,255,255,0.5); }
+    #footer a:hover { color: rgba(255,255,255,1); }
+
+    /* Портфолио */
+
+    #wrapper-portfolio { padding-top: 170px; padding-bottom: 0px }
+
+    .portfolio-box {
+        border-top: 2px dashed rgba(255,255,255,0.2);
+        z-index: 20;
+        position: relative;
+        padding-top: 80px;
+        width: 1000px;
+        height: 420px;
+        margin: 60px auto;
+    }
+
+    .portfolio-box h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+
+    .portfolio-box .slider-wrapper {
+        width:636px;
+        margin: 0 auto;
+        float: left;
+        position: relative
+    }
+
+    .portfolio-box .nivoSlider { border: 1px solid rgba(0,0,0,0.3); }
+
+    .portfolio-box .date {
+        color: rgba(255,255,255,0.6);
+        font-size: 14px;
+        font-weight: 200;
+        position: absolute;
+        left: 0;
+        font-style: normal;
+        top:50px;
+    }
+
+    .portfolio-box .descripion .go {
+        padding-top: 20px;
+    }
+
+    .portfolio-box .descripion {
+        color: #fff;
+        width: 300px;
+        display: inline-block;
+        text-align: left;
+        margin-left: 40px;
+        float: left;
+        position: relative;
+        font-size: 14px;
+    }
+
+    .portfolio-box .descripion form label {
+        font-size: 13px;
+        padding-bottom: 3px;
+        line-height: 2em;
+        font-weight: 300;
+
+    }
+
+    .portfolio-box .descripion form input {
+        width: 270px;
+        padding: 6px;
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 3px;
+    }
+
+    .portfolio-box .descripion .btn-send i {
+       font-size: 16px; margin-right: 10px;
+    }
+
+    .portfolio-box .descripion .btn-send {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 25px 8px 20px;
+        font-weight: 600;
+        text-align: center;
+        color: rgba(0,0,0,0.8);
+        border-radius: 3px;
+        background: rgba(255,255,255,0.45);
+        border-bottom: 3px solid rgba(0,0,0,0.55);
+        -webkit-transition: all 0.5s ease-in-out;
+        -webkit-perspective: 800px;
+        -webkit-perspective-origin: 50% 100px;
+
+    /*  background: #dc9c68;
+        border-bottom: 3px solid #906038; */
+    }
+
+    .portfolio-box .descripion form .btn-send:hover {
+        background: #dc9c68;
+        border-bottom: 3px solid #906038;
+        color: #000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        -webkit-transform: rotateX(20deg);
+    }
+
+    .pf-form-feedback { width: 300px; display: inline-block; display: none; }
+    .pf-form-feedback .go { cursor: pointer; }
+
+    /* Страничная навигация */
+
+    .page-navigation {
+        position: relative;
+        display: block;
+        margin: 80px auto;
+        height: 50px;
+        padding: 17px 12px 6px 12px;
+        border-radius: 3px;
+
+    }
+
+    .page-navigation .btn-group {
+        position: relative;
+        display: inline-block;
+        padding: 0 5px 0 1px;
+    }
+
+    .page-navigation .btn-group input {
+        position: relative;
+        background: rgba(0,0,0,0.2);
+        box-shadow: 0 1px 4px rgba(255,255,255,0.2);
+        border: 1px solid rgba(255,255,255,0.3);
+        color: #fff;
+        text-align: center;
+        padding: 8px;
+        width: 40px;
+        font-size: 16px;
+        margin-left: 0px;
+        float: left;
+     }
+
+     .page-navigation select option {
+        background: rgba(0,0,0,0.7);
+        color: rgba(255,255,255,0.8);
+     }
+
+     .page-navigation select {
+        padding: 8px 12px 8px 12px;
+        background: rgba(0,0,0,0.3);
+        border: 1px solid rgba(255,255,255,0.4);
+        box-shadow: inset 0 0 6px rgba(255,255,255,0.2), 0 1px 3px rgba(0,0,0,0.3);
+        color: rgba(255,255,255,0.7);
+        border-radius: 3px;
+     }
+
+    .page-navigation .btn-group span {
+        font-size: 14px;
+        padding: 8px 12px 8px 12px;
+        margin-top: 0px;
+        display: block;
+        position: relative;
+        float: left;
+        color: rgba(255,255,255,0.7);
+    }
+
+    .page-navigation .current {
+        position: relative;
+        width: 300px;
+        text-align:left;
+        float: left;
+    }
+
+    .page-navigation .second {
+
+    }
+
+    .page-navigation .second i {
+        transition: all 0.4s ease;
+        color: rgba(255,255,255,0.8);
+        text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .page-navigation .first {
+        background: rgba(255,255,255,0.2);
+        box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    }
+    .page-navigation .second i:hover {
+        color: #eb7e26;
+    }
+
+    .page-navigation .first:hover {
+        background: #dc9c68;
+        border-bottom: 3px solid #906038;
+
+    }
+
+    .page-navigation .first i {
+        color: rgba(255,255,255,0.9);
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    .page-navigation .disabled .btn { cursor: default; }
+
+    .page-navigation .disabled .first {
+        background: rgba(255,255,255,0.1);
+        box-shadow: 0 1 4px rgba(0,0,0,0.2);
+    }
+
+    .page-navigation .btn-group { display: inline-block; position: relative; float: left; }
+
+    .page-navigation .disabled .first i { color: rgba(0,0,0,0.4); }
+    .page-navigation .disabled .first:hover { border-bottom: 0; }
+    .page-navigation .disabled .second { background: transparent;  }
+    .page-navigation .disabled .second i { color: rgba(0,0,0,0.3); }
+
+    .page-navigation .btn {
+        cursor: pointer;
+        transition: all 0.4s ease;
+        font-size: 18px;
+        border-radius: 3px;
+        padding: 6px 10px 6px 10px;
+        float: left;
+        margin-right: 2px;
+    }
+
+    .portfolio-box input[type=text], textarea {
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid #DDDDDD;
+    }
+
+     .portfolio-box input[type=text]:focus, textarea:focus {
+      color: #111;
+      box-shadow: 0 1px 8px #d09361;
+      background: rgba(255,255,255,0.9);
+
+    }
+
+    /* Навигация сверху */
+
+    .header .block-tabs {
+        position: absolute;
+        bottom: -120px;
+        height: 180px;
+        width: 1020px;
+        left: 74px;
+    }
+    .header .years-tabs {
+        height: 50px;
+        bottom: -10px
+    }
+
+    .header .block-tabs ul { padding: 0; list-style: none; display: inline-block; }
+
+    .header .block-tabs li {
+        position: relative;
+        float: left;
+        margin-bottom: 15px;
+        border-right: 2px dashed rgba(255,255,255,0.25);
+    }
+
+    .header .block-tabs li:last-child { border-right: 0px; }
+
+    .header .block-tabs li a.active {
+
+        color: #ff8019;
+        color: rgba(255,255,255,1);
+        background: rgba(255,255,255,0.18);
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.45);
+
+    }
+
+    .header .block-tabs li a {
+        color: rgba(255,255,255,0.9);
+        padding: 6px 12px 6px 12px;
+        font-size: 14px;
+        border-radius: 3px;
+    }
+
+    .header .block-tabs li a:hover {
+        color: rgba(255,255,255,1);
+        background: rgba(255,255,255,0.15);
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .header .block-tabs .level { display: block; position: relative; width: 1000px; height: 50px; }
+
+
+    /* other stuff */
+
+    .gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.35) 20%, rgba(0,0,0,0.11) 49%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.27) 78%, rgba(0,0,0,0.46) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.57)), color-stop(20%,rgba(0,0,0,0.35)), color-stop(49%,rgba(0,0,0,0.11)), color-stop(50%,rgba(0,0,0,0.1)), color-stop(78%,rgba(0,0,0,0.27)), color-stop(100%,rgba(0,0,0,0.46))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.57) 0%,rgba(0,0,0,0.35) 20%,rgba(0,0,0,0.11) 49%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.27) 78%,rgba(0,0,0,0.46) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(0,0,0,0.57) 0%,rgba(0,0,0,0.35) 20%,rgba(0,0,0,0.11) 49%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.27) 78%,rgba(0,0,0,0.46) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(0,0,0,0.57) 0%,rgba(0,0,0,0.35) 20%,rgba(0,0,0,0.11) 49%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.27) 78%,rgba(0,0,0,0.46) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.57) 0%,rgba(0,0,0,0.35) 20%,rgba(0,0,0,0.11) 49%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.27) 78%,rgba(0,0,0,0.46) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91000000', endColorstr='#75000000',GradientType=0 ); /* IE6-9 */
+     }
